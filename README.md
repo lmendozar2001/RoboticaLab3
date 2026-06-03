@@ -150,10 +150,11 @@ El gripper usa una ventosa de silicona que se pega al huevo por vacío. Cuando l
 
 ### 7.3 Señales digitales usadas
 
+En el laboratorio se utilizó únicamente la salida digital `D0_09` para controlar la válvula solenoide del gripper. La entrada `DI_01` (sensor de confirmación de vacío) no se conectó durante la práctica.
+
 | Señal | Función |
 |---|---|
 | **D0_09 (salida)** | ON = agarra el huevo / OFF = suelta |
-| **DI_01 (entrada)** | Confirma que el vacío se generó correctamente |
 
 ```spel
 On D0_09    ' activa el vacío, agarra el huevo
@@ -387,7 +388,12 @@ Con esos tres puntos, la instrucción `Pallet 1, Origin, PuntoX, PuntoY, 6, 5` c
 
 ## Anexo C — Videos
 
-- **`simulación.mp4`**: simulación en EPSON RC+ 7.0 de la trayectoria completa con los dos huevos.
-- **`Video robot real.mp4`**: ejecución física en el EPSON T3-401S con la cubeta y los huevos de plástico.
+### Simulación en EPSON RC+ 7.0
 
-Ambos videos inician con la introducción del laboratorio LabSIR.
+<!-- Arrastra el archivo simulación.mp4 a un Issue de GitHub para obtener el link y reemplázalo aquí -->
+https://github.com/lmendozar2001/RoboticaLab3/blob/main/simulación.mp4
+
+### Robot real
+
+<!-- Arrastra el archivo "Video robot real.mp4" a un Issue de GitHub para obtener el link y reemplázalo aquí -->
+https://github.com/lmendozar2001/RoboticaLab3/blob/main/Video%20robot%20real.mp4
