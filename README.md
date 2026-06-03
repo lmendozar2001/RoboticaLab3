@@ -3,7 +3,7 @@
 
 **Asignatura:** Robótica Industrial  
 **Semestre:** 2026-I  
-**Integrantes:** Luis Alberto Mendoza Rojas — Duvan Tique  
+**Integrantes:** Luis Alberto Mendoza Rojas — Duvan Stiven Tique Osorio  
 **Repositorio:** https://github.com/lmendozar2001/RoboticaLab3
 
 ---
@@ -144,13 +144,12 @@ El gripper usa una ventosa de silicona que se pega al huevo por vacío. Cuando l
 | **Ventosa de silicona** | Ø 30–40 mm, copa blanda | Contacto con el huevo |
 | **Eyector Venturi** | 4–6 bar | Genera el vacío |
 | **Válvula solenoide 5/2** | 24 VDC, 1/8" | Controla cuándo hay vacío |
-| **Sensor de vacío** | 0 a −100 kPa | Confirma que el huevo fue agarrado |
 | **Tubería neumática** | Ø 4 mm | Conduce el aire |
 | **Soporte de montaje** | Aluminio | Fija todo al flange del robot |
 
 ### 7.3 Señales digitales usadas
 
-En el laboratorio se utilizó únicamente la salida digital `D0_09` para controlar la válvula solenoide del gripper. La entrada `DI_01` (sensor de confirmación de vacío) no se conectó durante la práctica.
+En el laboratorio se utilizó únicamente la salida digital `D0_09` para controlar la válvula solenoide del gripper. 
 
 | Señal | Función |
 |---|---|
@@ -225,8 +224,6 @@ Al momento de correr la simulación en RC+ 7.0 todo funcionó bien desde el prin
 - **Los puntos del pallet no quedaron bien a la primera.** Al enseñarle los tres puntos de referencia (Origin, PuntoX, PuntoY) manualmente con el jog, el robot calculó posiciones que no coincidían exactamente con el centro de cada hueco de la cubeta. Tuvimos que repetir el proceso de enseñanza un par de veces hasta que las posiciones quedaron bien alineadas.
 
 - **El gripper a veces no agarraba bien el huevo.** Como los huevos son de plástico y la superficie es curva, en algunas posiciones la ventosa no hacía contacto completo y el huevo se caía durante el movimiento. Lo solucionamos bajando un poco más el eje Z al momento de agarrar.
-
-- **La velocidad inicial era muy alta.** Con `Speed 30` el robot se movía más rápido de lo que esperábamos y en las primeras pruebas el huevo se soltaba por la inercia. Bajamos la velocidad temporalmente para las pruebas y luego la volvimos a subir una vez que todo estaba bien calibrado.
 
 En general el laboratorio fue una buena experiencia para entender cómo funciona el paletizado en un robot real y cómo la simulación no siempre refleja exactamente lo que pasa en físico.
 
@@ -390,10 +387,9 @@ Con esos tres puntos, la instrucción `Pallet 1, Origin, PuntoX, PuntoY, 6, 5` c
 
 ### Simulación en EPSON RC+ 7.0
 
-<!-- Arrastra el archivo simulación.mp4 a un Issue de GitHub para obtener el link y reemplázalo aquí -->
-https://github.com/lmendozar2001/RoboticaLab3/blob/main/simulación.mp4
+[![Ver video 2](https://img.youtube.com/vi/Xo9egg_sEuo/0.jpg)](https://youtu.be/Xo9egg_sEuo)
 
 ### Robot real
 
-<!-- Arrastra el archivo "Video robot real.mp4" a un Issue de GitHub para obtener el link y reemplázalo aquí -->
-https://github.com/lmendozar2001/RoboticaLab3/blob/main/Video%20robot%20real.mp4
+[![Ver video](https://img.youtube.com/vi/vBmXD0nPjsc/0.jpg)](https://youtu.be/vBmXD0nPjsc)
+
